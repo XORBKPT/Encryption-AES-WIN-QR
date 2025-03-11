@@ -239,3 +239,59 @@ Troubleshooting
 Build Errors: Ensure MinGW and CMake are installed (pacman -S mingw-w64-x86_64-gcc mingw-w64-x86_64-cmake in MSYS2).
 QR Code Not Scanning: Verify BMP files are not corrupted; increase pixel_size in save_qr_to_bmp if needed (e.g., 20).
 File Not Found: Check that mbedtls/ is populated and qrcodegen files are present.
+
+text
+
+Collapse
+
+Wrap
+
+Copy
+
+#### File 6: `.gitignore`
+- Content:
+build/
+*.exe
+*.o
+.obj
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+qr_line.bmp
+
+text
+
+Collapse
+
+Wrap
+
+Copy
+- Save as `.gitignore`.
+
+4. **Add mbedTLS**
+- **Option 1: Submodule**
+  ```bash
+  git submodule add https://github.com/ARMmbed/mbedtls.git mbedtls
+  git submodule update --init
+Option 2: Manual
+Download mbedTLS from GitHub.
+Extract to mbedtls/ in the project root.
+Commit and Push
+bash
+
+Collapse
+
+Wrap
+
+Copy
+git add .
+git commit -m "Initial commit with AES encryptor and QR code feature"
+git push origin main
+Verify on GitHub
+Visit https://github.com/yourusername/aerospace_encryptor_with_qr to ensure all files are uploaded.
+Notes
+QR Code Design: Each module is 10x10 pixels (pixel_size = 10), ensuring scannability. Adjust pixel_size in save_qr_to_bmp for larger/smaller QR codes if needed.
+Interpretation: "Sets of 5 number windows" is interpreted as the 5-character hex groups per line, with a QR code per line for usability (one QR code per group would generate too many files).
+Dependencies: qrcodegen is included directly; mbedTLS is expected in mbedtls/.
+This solution provides a fully functional, portable AES encryption tool with QR code output, ready for deployment on GitHub with clear instructions for building and using the application.
