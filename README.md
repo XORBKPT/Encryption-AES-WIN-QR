@@ -1,0 +1,1 @@
+# windows-Crypto-QR
