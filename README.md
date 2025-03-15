@@ -1,7 +1,6 @@
 
 ---
-## GitHub Repository Setup Instructions for `aerospace_encryptor_with_qr`
-# NOT FOR AEROSPACE USE ## Demo only for Post Doc Bucket:3 #
+# Not for aerospace use, demo only for Post Doc Bucket:3 #
 ### Repository Structure
 ```
 aerospace_encryptor_with_qr/
