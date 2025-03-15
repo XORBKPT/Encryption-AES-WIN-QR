@@ -1,6 +1,7 @@
 
 ---
 ## GitHub Repository Setup Instructions for `aerospace_encryptor_with_qr`
+# NOT FOR AEROSPACE USE JUST A DEMO FOR TuM Institute for Advanced Study, Advanced Computation, Cryptography: Post Doc Bucket: 3 CODING PRACTICE #
 ### Repository Structure
 ```
 aerospace_encryptor_with_qr/
