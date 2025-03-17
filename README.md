@@ -1,6 +1,6 @@
 
 ---
-### Repository Structure, student learning module for translating outputs to QR codes and use imagination for what this could do practically. For example an X.509 certificate embedded in a QR code tagged to a social media post might allow someone to verify it is real news from a real person? <80) Below is just a basic synchronous key but the byte length max for QR codes is about 2kB so this also demonstates X.509 certs are doable with some room to spare in the QR code for other data.
+### Repository Structure, student learning module for translating outputs to QR codes and use imagination for what this could do practically. For example an X.509 certificate embedded in a QR code tagged to a social media post might allow someone to verify it is real news from a real person? <80) Below is just a basic synchronous key but the byte length max for QR codes is about 2kB so this also demonstates X.509 certs are doable with some room to spare in the QR code for other data. If I get time on a weekend I'll have a go.
 ```
 aerospace_encryptor_with_qr/
 ├── main.cpp          # Main source file with AES encryption and QR code generation
