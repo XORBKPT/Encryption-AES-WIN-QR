@@ -1,7 +1,6 @@
 
 ---
-# Not for aerospace use, demo only for Post Doc Bucket:3 #
-### Repository Structure
+### Repository Structure, student learning module for translating outputs to QR codes and use imagination for what this could do practically. For example an X.509 certificate embedded in a QR code tagged to a social media post might allow someone to verify it is real news from a real person? <80) Below is just a basic synchronous key but the byte length max for QR codes is about 2kB so this also demonstates X.509 certs are doable with some room to spare in the QR code for other data.
 ```
 aerospace_encryptor_with_qr/
 ├── main.cpp          # Main source file with AES encryption and QR code generation
@@ -199,3 +198,4 @@ git push origin main
 - **Main.cpp**: Ensure your `main.cpp` includes the full AES-256-CBC encryption and QR code generation logic as intended for the project.
 - **Portability**: The executable is statically linked (via `-static` in `CMakeLists.txt`), making it portable for USB deployment.
 - **QR Code Design**: The QR codes are generated with a default module size of 10x10 pixels, adjustable in the code if needed.
+
